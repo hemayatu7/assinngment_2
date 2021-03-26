@@ -1,38 +1,70 @@
+body{
+  font-family: poppins;
+  background-color: aqua;
+}
+h3{
+  text-transform: uppercase;
+}
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+section {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.confirmed-card{
+  height:200px ;
+  margin-right: -30px;
+  width: 300px;
+
+}
+.death-card{
+  height:200px ;
+  margin-left: -30px;
+  width: 300px;
+
+}
+.recovered-card {
+  height: 150px;
+  width: 300px;
+  margin: 10px;
+  box-shadow: 0 3px 6px 3px rgb(202, 198, 198);
+  
+}
+
+.confirmed-card {
+  background-color: rgb(255, 230, 4);
+}
+.death-card {
+  background-color: rgb(255, 0, 149);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.recovered-card {
+  background-color: rgba(13, 247, 13, 0.993);
+  color: white;
+}
+.title {
+  border-bottom: 2px solid black;
+}
+select {
+  height: 40px;
+  border: none;
+  margin: 30px;
+  padding: 7px 10px;
+  border-bottom: 1px solid gray;
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: rgb(10, 188, 233);
+box-shadow: 2px 2px 5px #fff;
+
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
